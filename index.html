@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alert</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="inputForm">
+      <div id="modal-box" class="modal-container dis-none">
+        <h3>Set Alert</h3>
+
+        <div id="controls-container">
+          <div id="hour-control">
+            <button id="hIncrese">+</button>
+            <input id="hInput" type="text" />
+            <button id="hDecrese">-</button>
+          </div>
+          :
+          <div id="minute-control">
+            <button id="mIncrese">+</button>
+            <input id="mInput" type="text" />
+            <button id="mDecrese">-</button>
+          </div>
+          :
+          <div id="ampm-control">
+            <button id="toAm">AM</button>
+            <input id="ampmInput" type="text" />
+            <button id="toPm">PM</button>
+          </div>
+        </div>
+
+        <hr />
+        <div class="btn-container">
+          <button id="cancle-btn">Cancle</button>
+          <button id="add-btn" type="submit">Add</button>
+        </div>
+      </div>
+    </form>
+    <div id="modal-box-support" class="bg-black dis-none"></div>
+    <div class="nav">
+      <h1 class="title">Alert</h1>
+      <div id="clock">
+        <h3 id="navH"></h3>
+        :
+        <h3 id="navM"></h3>
+        :
+        <h3 id="navAMPM"></h3>
+      </div>
+      <button class="add-alert-btn">+</button>
+    </div>
+    <div style="padding: 10px 5px" id="alert-container"></div>
+    <audio id="alert-song" autoplay src=""></audio>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.nav {
+  display: flex;
+  background-color: rgb(63, 63, 63);
+  color: rgb(181, 178, 178);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 10;
+}
+.add-alert-btn {
+  width: 30px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.title {
+  font-size: 27px;
+}
+.dis-none {
+  display: none;
+}
+
+.bg-black {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.479);
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modal-container {
+  width: 300px;
+  background: white;
+  height: 265px;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 3;
+  top: 90px;
+  bottom: 50px;
+  margin: 0 auto;
+  right: 50px;
+  left: 50px;
+  box-shadow: 0 0 10px rgb(91, 91, 91);
+}
+#controls-container button {
+  background-color: black;
+  color: white;
+  width: 35px;
+  padding: 0px 5px 2px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  line-height: 18px;
+  height: 25px;
+}
+#controls-container input {
+  background: rgb(204, 204, 204);
+  border: none;
+  color: black;
+  font-size: 27px;
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  width: 55px;
+  height: 60px;
+}
+#controls-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#controls-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  margin-top: 30px;
+}
+.modal-container {
+  overflow: hidden;
+}
+.modal-container h4 {
+  margin: 10px;
+}
+h3 {
+  background-color: rgb(63, 63, 63);
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 2px 0;
+  color: white;
+}
+.song-container {
+  padding: 0 30px;
+  margin-bottom: 18px;
+}
+input,
+label {
+  cursor: pointer;
+}
+.song-container ul {
+  list-style: none;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.song-container li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 3px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  justify-content: space-evenly;
+}
+
+.btn-container button {
+  width: 100px;
+  height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+}
+#cancle-btn {
+  background-color: red;
+}
+.btn-container button:hover {
+  background-color: gray;
+}
+#cancle-btn:hover {
+  background-color: rgb(189, 112, 112);
+}
+#clock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
